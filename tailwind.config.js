@@ -11,7 +11,8 @@ export default {
 
 
       },
-      poppins: ['Poppins', 'sans-serif'],
+      fontFamily: {
+      sans: ['Poppins', 'sans-serif']},
       backgroundImage: {
 
         'Background': "url('/public/Background2.jpeg')"

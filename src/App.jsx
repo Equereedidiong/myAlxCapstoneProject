@@ -1,66 +1,47 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 // import './App.css'
 import './index.css'
 import Login  from './components/Login'
-// import { BrowserRoutes, Router, Routes, Routes} from react-router-dom;
+// import { RouterProvider, createBrowserRouter, } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './components/Home'
+import Dashboard from './components/Dashboard'
+import SideNav from './components/SideNav';
+import Playback from './components/Playback';
+import NavBar from './components/NavBar';
+import Display from './components/Display';
+import Artistdp from './components/Artistdp';
+import AlbumItem from './components/AlbumItem';
 
 function App() {
-  // const [count, setCount] = useState(0)
-
   return (
     <>
-    
-      <body className = ' bg-Background bg-center bg-cover  h-screen items-center  ' >
-        <nav className='w-screen h-12 bg-nav flex justify-center items-center p-8' >
-           
-          <div>
 
-            <div>
-              <img src= "../public/logo.svg"alt="Logo" />
-            </div>
-            
-          </div>
+     <Router>
+        <Routes>
+        
+          <Route path="/*" element={<Home />} /> 
+          <Route path="/Login" element={<Login />} />
+          <Route path="/Login/Dashboard" element={<Dashboard />} />
+          <Route path="/Login/SideNav" element={<SideNav />} />
+          <Route path="/Login/Playback" element={<Playback />} />
+          <Route path="/Login/NavBar" element={<NavBar />} />
+          <Route path="/Login/AlbumItem" element={<AlbumItem />} />
+          <Route path="/Login/Display" element={<Display />} />
+          <Route path="/Login/Artist" element={<Artistdp />} />
 
-        </nav>
-         
-        <main>
-          <div className=' flex items-center justify-center '>
+          {/* <Route path="/dashboard/Settings" element={<Settings/>} /> */}
+        </Routes>
 
-            <div className='flex flex-col items-center  pt-10'>
-              <div className=' text-lg py-1 mb-2 flex items-center flex-col'>
+        
+      </Router>
 
-               <h4 className='text-slate-50 font-normal pb-4 font-poppins'> Introducing flick music player </h4>
-               <h2 className='text-5xl font-medium text-slate-50 pb-8'>Listen to music <span className=' text-slate-100 italic font-normal'>differently</span></h2> 
-
-              </div>
-
-              <div className='rounded-md max-w-80 max-h-80 flex flex-col items-center '> 
-                <img className = '' src="../public/Transform.svg" alt= "" />
-
-                <img className = 'pt-16 pb-16' src="../public/Playback.svg" alt="" />
-
-                <button className=' text-sky-950 font-normal h-56 w-32 pt-1 pb-1  border-2 border-sky-600 rounded-md bg-blue-200 ' > Open App </button>
-
-              </div>
-
-
-            </div>                
-
-          
-
-          
-            {/* <button className=''> Open app </button> */}
-          </div>
-          
-        </main>
-
-      </body>
-
-      < Login />
+        
+      {/* Use wildcard for the path with more */}
+      
     </>
-  )
+  );
 }
 
 export default App;
