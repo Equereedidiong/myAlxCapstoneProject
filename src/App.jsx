@@ -13,8 +13,15 @@ import NavBar from './components/NavBar';
 import Display from './components/Display';
 import Artistdp from './components/Artistdp';
 import AlbumItem from './components/AlbumItem';
+import Test from './components/test';
+
+// import { useState, useEffect } from 'react';
 
 function App() {
+
+  const spotifyID = import.meta.env.VITE_CLIENT_ID;
+  const spotifySECRET = import.meta.env.VITE_CLIENT_SECRET;
+
   return (
     <>
 
@@ -30,8 +37,9 @@ function App() {
           <Route path="/Login/AlbumItem" element={<AlbumItem />} />
           <Route path="/Login/Display" element={<Display />} />
           <Route path="/Login/Artist" element={<Artistdp />} />
+          <Route path="/Login/Test" element={<Test />} />
 
-          {/* <Route path="/dashboard/Settings" element={<Settings/>} /> */}
+
         </Routes>
 
         

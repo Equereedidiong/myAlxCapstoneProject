@@ -4,10 +4,14 @@ import React from "react";
 const Home = () => {
     // const [count, setCount] = useState(0)
   
+
+
+
+  
     return (
       <>
       
-        <div className = ' bg-Background bg-center bg-cover h-screen items-center ' >
+        <div className = ' h-full bg-Background bg-center bg-cover items-center ' >
           <nav className='w-screen h-12 bg-nav flex justify-center items-center p-8' >
              
             <div>

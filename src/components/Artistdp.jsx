@@ -1,7 +1,10 @@
 import React from 'react'
 import { assets } from '../assets/Assets'
 
-const Artistdp = () => {
+function Artistdp () {
+
+
+  
   return (
 
     <div className='flex flex-col items-center cursor-pointer pt-2'>

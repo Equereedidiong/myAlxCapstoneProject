@@ -2,13 +2,43 @@ import React from 'react'
 import Artistdp from './Artistdp';
 import AlbumItem from './AlbumItem';
 import NavBar from './NavBar';
+import { NewReleases } from './test';
+import { useState, useEffect } from 'react';
 
-export const Display = () => {
+function Display () {
+
+  const [ albums, setAlbum] = useState([])
+  const [Artistdp, setArtistdp] = useState([])
+
+  //When components mount we fetch data from the NewRelease function from test
+
+  useEffect(() => {
+   
+    async function fetchData () {
+
+        const {artist, albums} = NewReleases()
+        setArtistdp(artist)
+        setAlbum(albums)
+
+
+
+    }
+
+    fetchData();
+
+
+  }
+
+
+
+
+  )
+
+
   return (
 
-    
     <>
-        <div className='space-y-1 w-[100%] bg-slate-50 overflow-y-auto '>
+        <div className='space-y-1 w-[100%] bg-slate-50 overflow-y-auto overflow:hidden '>
 
             <NavBar />
 
@@ -23,7 +53,7 @@ export const Display = () => {
                     </div>
                     <div className='flex justify-between px-1'>
 
-                        <Artistdp />
+                        <Artistdp /> 
                         <Artistdp />
                         <Artistdp />
                         <Artistdp />
@@ -85,9 +115,8 @@ export const Display = () => {
         </div>
     
     </>
+    // //make artist components collect propers from what ever deeezer gives. Tis would be an onject 
   )
-
-  
 }
 
 export default Display;

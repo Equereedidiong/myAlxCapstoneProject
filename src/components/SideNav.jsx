@@ -9,7 +9,7 @@ const SideNav = () => {
   return (
 
     
-    <div className='w-[20%] text-sm bg-slate-100 h-[100%] p-5 flex-col gap-10 text-[#7E7D8F] justify-normal lg:flex border-r-2'>
+    <div className='w-[20%] text-sm bg-slate-100 h-[100%] py-4 px-6 flex-col gap-10 text-[#7E7D8F] justify-normal lg:flex border-r-2'>
     
       <div className=' gap-5 rounded flex flex-col justify-around'>
         <div className='flex items-center gap-3 pl-8  cursor-pointer'>

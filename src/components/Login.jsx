@@ -28,7 +28,7 @@ const Login = () => {
                             name="email"
                             placeholder=" Email "
                             className=" rounded-md border-0 py-1.5 pl-4 pr-28 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-
+                            
                         />
                         <button className=' text-sky-950 font-sans font-normal h-10 w-32 pt-1 pb-1  border-2 border-sky-600 rounded-md bg-blue-200 ' > Sign in </button>
                   </form>
