@@ -10,6 +10,7 @@ function NavBar() {
     const [searchInput, setsearchInput] = useState("");
     const [accessToken, setaccessToken] = useState("");
     const [Album, setAlbum] = useState([]);
+    const [defaultAlbums, setdefaultAlbums] = useState([])
 
     // Fetch access token from Spotify
     useEffect(() => {
@@ -43,6 +44,12 @@ function NavBar() {
             return;
         }
 
+        if (searchInput === "" )  { 
+            // If search input is cleared, reset to default albums
+            setAlbum(defaultAlbums);
+            return;
+        }
+
         const searchParameters = {
             method: 'GET',
             headers: {
@@ -64,9 +71,17 @@ function NavBar() {
             .then(results => results.json())
             .then(data => {
                 setAlbum(data.albums.items);
+                defaultAlbums(data.albums.items)
                 console.log('Albums:', data.albums.items);
             })
             .catch(error => console.error('Error fetching albums:', error));
+
+            if (searchInput === "" )  { 
+                // If search input is cleared, reset to default albums
+                setAlbum(defaultAlbums);
+                return;
+            }
+    
     }
 
     return (
@@ -77,7 +92,7 @@ function NavBar() {
                         <div className="lg:flex items-center justify-between px-3"> 
                             <div className="flex items-center gap-2">
                                 <img className="w-6 h-6" src={assets.wave_icon} alt="" />
-                                <p className="text-gray-600">Welcome Edidiong</p>
+                                <p className="text-gray-600">Welcome </p>
                             </div>
                             <div>
                                 <input

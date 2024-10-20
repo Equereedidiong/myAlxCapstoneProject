@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useContext, useState } from 'react'
 import viteLogo from '/vite.svg'
 // import './App.css'
 import './index.css'
@@ -14,10 +14,13 @@ import Display from './components/Display';
 import Artistdp from './components/Artistdp';
 import AlbumItem from './components/AlbumItem';
 import Test from './components/test';
+import PlayerContextProvider from './components/context/PlayerContext';
 
 // import { useState, useEffect } from 'react';
 
 function App() {
+
+
 
   const spotifyID = import.meta.env.VITE_CLIENT_ID;
   const spotifySECRET = import.meta.env.VITE_CLIENT_SECRET;

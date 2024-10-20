@@ -7,10 +7,66 @@ function Artistdp () {
   
   return (
 
-    <div className='flex flex-col items-center cursor-pointer pt-2'>
+    <>
+
+
+
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
         <div> <img className= 'h-36 w-36'src={assets.Artistdp_icon} alt="" /></div>
         <div><p className='text-slate-400 py-1 text-sm'>Taylor Swift</p></div>
-    </div>
+
+      </div>
+
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.Coldplay} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Cold Play</p></div>
+
+      </div> 
+
+
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.Stormzy} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Stormzy</p></div>
+
+      </div> 
+
+
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.Lewis} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Lewis Calpaldi</p></div>
+
+      </div>
+     
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.wizkid} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Wizkid</p></div>
+
+      </div>
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.Burna} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Burna Boy</p></div>
+
+      </div>
+
+
+      <div className='flex flex-col items-center cursor-pointer pt-2'>
+
+        <div> <img className= 'h-36 w-36'src={assets.Davido} alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>Davido</p></div>
+
+      </div>
+
+
+     
+    </>
+        
+
 
     // <div className='h-screen w-[75%] flex justify-end gap-4 flex-row '>
       
