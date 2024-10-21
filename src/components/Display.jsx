@@ -15,7 +15,7 @@ function NewReleases() {
     const [ArtistsData, setArtistsData] = useState([]);
 
     // Code to  Fetch access token from Spotify
-    useEffect(() => {
+    useEffect(() => { 
         const authParams = {
             method: "POST",
             headers: {

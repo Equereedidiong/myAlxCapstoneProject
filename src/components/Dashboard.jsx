@@ -26,7 +26,7 @@ const Dashboard = () => {
       </div>
 
       <Playback />
-      <audio ref = {audioRef} src={songs[0]} preload ='auto'></audio>
+      <audio ref = {audioRef} src={songs2[0]} preload ='auto'></audio>
     </div>
   )
 }

@@ -52,5 +52,5 @@ import s6 from './s6.webp'
 
 
 export const assets = { wizkid, Lewis, Trending, Davido, Burna, Coldplay, Stormzy, Beyonce, pause_icon, home_icon, art,logout_icon, Zombie_icon, volume_icon, back_icon, play_icon, next_icon, flick_icon, focusmode_icon, wave_icon, notification_icon, top100_icon, workout_icon, login_icon, book_icon, help_icon, settings_icon, trending_icon, album_icon, Artistdp_icon }
-export const songs2 = {songs_one}
+export const songs2 = [ songs_one, songs_two, songs_three, songs_four, songs_five, songs_six ]
 export const songs = [{id:0, name:"Fi kan we kan",image:s1, file: songs_one, desc: "BNXN ft Rema"}, {id:1, name:"Higher", image:s2, file:songs_two, desc: "Burna Boy"}, {id:2, name:"Iseoluwa", image:s3, file:songs_three, desc: "Fireboy Dml"},{id:3, name:"Tete", image:s4, file:songs_four, desc: "Crayon"}, {id:4, name:"MMS", image:s5, file:songs_five, desc: "Asake ft wizkid"}, {id:5, name:"Olaitan Olaoluwa", image:s6, file:songs_six, desc: "Oxloade"}]
