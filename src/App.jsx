@@ -1,3 +1,6 @@
+// Do not take this file seriously, I used it to view specific pages during product build
+// The file titled Dashboard replaced my App.jsx file, and housed all necessary components.
+
 import { useContext, useState } from 'react'
 import viteLogo from '/vite.svg'
 // import './App.css'

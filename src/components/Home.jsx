@@ -1,3 +1,5 @@
+// This file is my home page of my music player app
+
 import React from "react";
 import { NavLink } from "react-router-dom";
 
@@ -40,7 +42,7 @@ const Home = () => {
                   <img className = '' src="../public/Transform.svg" alt= "" />
   
                   <img className = 'pt-8 pb-8' src="../public/Playback.svg" alt="" />
-                  
+
                   <NavLink to = "/Login" >
                       <button className=' text-sky-950 font-sans font-normal h-12 w-32 pt- pb- border-2 border-sky-500 rounded-md bg-blue-100 ' > Open App </button>
                   </NavLink> 

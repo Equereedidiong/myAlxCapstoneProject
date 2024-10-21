@@ -1,3 +1,5 @@
+//This file components represents a song Item on my User Interface ready to accept mapping from a returned array of objects.
+
 import React, { useContext } from 'react'
 import { songs } from '../assets/Assets';
 import { PlayerContext } from './context/PlayerContext';

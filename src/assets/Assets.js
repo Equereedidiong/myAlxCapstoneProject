@@ -1,3 +1,5 @@
+//This file house all the assests I used in this product
+
 import React from 'react'
 
 import home_icon from './home-05.svg'

@@ -1,3 +1,5 @@
+//This file is reponsible for a fragment of what makes up my dashboard
+
 import React, { useState, useEffect } from 'react';
 import { assets, songs } from '../assets/Assets';
 import AlbumItem from './AlbumItem'; 

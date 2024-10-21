@@ -1,3 +1,5 @@
+//This file is for controlling the play and pause Icons of the player
+
 // import React, { useContext } from 'react'
 import SideNav from './SideNav';
 import Dashboard from './Dashboard';
@@ -68,7 +70,7 @@ export const Playback = () => {
                         <div className='flex gap-6 py-2'>
                             <img onClick={previous} className=' w-4 cursor-pointer'src={assets.back_icon} alt="" />
                             <img onClick={isPlaying ? pause : play} className=' w-4 cursor-pointer'src={assets.play_icon} alt="" />
-                            <img onClick={pause} className=' w-4 cursor-pointer'src={assets.pause_icon} alt="" />
+                            {/* <img onClick={pause} className=' w-4 cursor-pointer'src={assets.pause_icon} alt="" /> */}
                             <img onClick= {next} className=' w-4 cursor-pointer'src={assets.next_icon} alt="" />
 
 

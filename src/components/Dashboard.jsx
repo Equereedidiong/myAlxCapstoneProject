@@ -1,3 +1,5 @@
+//This is my main components it houses all other components and is that which the user see's and interacts with the most after sigining into Flick.
+
 import React, { useContext } from 'react'
 import SideNav from './SideNav' 
 import Playback from './Playback';

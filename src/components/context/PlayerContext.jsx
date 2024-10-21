@@ -1,3 +1,5 @@
+//This file is a player context file, but I did not use it cause the process was complex
+
 import {createContext, useRef, useState}  from "react"
 import { assets, songs, songs2 } from "../../assets/Assets";
  

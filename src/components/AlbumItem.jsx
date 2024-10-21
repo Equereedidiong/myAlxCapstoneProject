@@ -1,3 +1,6 @@
+//This file components represents an Album Item on my User Interface ready to accept mapping from a returned array of objects.
+
+
 import React from 'react'
 import { assets } from '../assets/Assets';
 

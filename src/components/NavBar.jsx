@@ -1,3 +1,6 @@
+//This file is where my search input functionality lives. 
+//It welcomes the user when logged in and also helps them search for inputs
+
 import React, { useState, useEffect } from 'react';
 import SideNav from './SideNav';
 import { assets } from '../assets/Assets';

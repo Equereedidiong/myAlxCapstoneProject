@@ -1,3 +1,5 @@
+//This file helped me implement routing for some of my navigating pages 
+
 import { StrictMode } from 'react';
 import { createRoot } from 'react-dom/client';
 import React from 'react';

@@ -1,3 +1,5 @@
+//This component helps store the Artists Display picture when my fetched data was ready
+
 import React from 'react'
 import { assets } from '../assets/Assets'
 

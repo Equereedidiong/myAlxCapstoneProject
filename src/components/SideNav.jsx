@@ -1,3 +1,5 @@
+//This components shows all my Navigation elements, most of them are hard-coded with Icons and text Only home and sign out is functional as needed.
+
 import React from 'react'
 import { assets } from '../assets/Assets'
 import { NavLink } from 'react-router-dom'
