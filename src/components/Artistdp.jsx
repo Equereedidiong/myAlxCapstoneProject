@@ -1,7 +1,7 @@
 import React from 'react'
 import { assets } from '../assets/Assets'
 
-function Artistdp () {
+function Artistdp ({artist}) {
 
 
   
@@ -13,11 +13,11 @@ function Artistdp () {
 
       <div className='flex flex-col items-center cursor-pointer pt-2'>
 
-        <div> <img className= 'h-36 w-36'src={assets.Artistdp_icon} alt="" /></div>
-        <div><p className='text-slate-400 py-1 text-sm'>Taylor Swift</p></div>
+        <div> <img src={artist.images[0].url} className= 'h-36 w-36 rounded-full' alt="" /></div>
+        <div><p className='text-slate-400 py-1 text-sm'>{artist.name}</p></div>
 
       </div>
-
+{/* 
       <div className='flex flex-col items-center cursor-pointer pt-2'>
 
         <div> <img className= 'h-36 w-36'src={assets.Coldplay} alt="" /></div>
@@ -60,7 +60,7 @@ function Artistdp () {
         <div> <img className= 'h-36 w-36'src={assets.Davido} alt="" /></div>
         <div><p className='text-slate-400 py-1 text-sm'>Davido</p></div>
 
-      </div>
+      </div> */}
 
 
      

@@ -2,15 +2,17 @@ import React, { useContext } from 'react'
 import { songs } from '../assets/Assets';
 import { PlayerContext } from './context/PlayerContext';
 
+export const playsong = () => {
+
+    const audio = new Audio(file);
+    audio.play();
+
+}
+
 function  SongItem ({ id, desc, name, image, file, }) {
 //   console.log(song)
 
-  export const playsong = () => {
 
-      const audio = new Audio(file);
-      audio.play();
-
-    }
 
   return (
 

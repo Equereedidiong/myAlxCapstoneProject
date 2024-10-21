@@ -49,7 +49,7 @@ function App() {
       </Router>
 
         
-      {/* Use wildcard for the path with more */}
+
       
     </>
   );

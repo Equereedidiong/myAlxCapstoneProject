@@ -12,7 +12,7 @@ function NavBar() {
     const [Album, setAlbum] = useState([]);
     const [defaultAlbums, setdefaultAlbums] = useState([])
 
-    // Fetch access token from Spotify
+    // Code to Fetch access token from Spotify
     useEffect(() => {
         const authParams = {
             method: "POST",
@@ -29,8 +29,8 @@ function NavBar() {
         fetch("https://accounts.spotify.com/api/token", authParams)
             .then(result => result.json())
             .then(data => {
-                console.log('Access Token:', data); // Log the data to see the access token
-                setaccessToken(data.access_token); // Set access token in the state
+                console.log('Access Token:', data); 
+                setaccessToken(data.access_token); 
             })
             .catch(error => console.error('Error fetching token:', error)); // Catch any errors
     }, []); // Only run once on component mount
@@ -45,7 +45,7 @@ function NavBar() {
         }
 
         if (searchInput === "" )  { 
-            // If search input is cleared, reset to default albums
+            // Code to reset search input when cleared.
             setAlbum(defaultAlbums);
             return;
         }
@@ -58,7 +58,7 @@ function NavBar() {
             }
         };
 
-        // Get artist ID
+        // Code to Get artist ID
         const artistID = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=artist`, searchParameters)
             .then(results => results.json()) 
             .then(data => (data.artists.items.length ? data.artists.items[0].id : null))
@@ -66,7 +66,7 @@ function NavBar() {
 
         console.log('Artist ID:', artistID);
 
-        // Get album data based on the search input
+        // Code to Get album data based on the search input
         const albumData = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=album&market=US&limit=24`, searchParameters)
             .then(results => results.json())
             .then(data => {
@@ -75,9 +75,9 @@ function NavBar() {
                 console.log('Albums:', data.albums.items);
             })
             .catch(error => console.error('Error fetching albums:', error));
-
+            // If search input is cleared, this code helps to reset to default albums but it did not work for some reasons
             if (searchInput === "" )  { 
-                // If search input is cleared, reset to default albums
+
                 setAlbum(defaultAlbums);
                 return;
             }
@@ -98,7 +98,7 @@ function NavBar() {
                                 <input
                                     onKeyDown={event => {
                                         if (event.key === "Enter") {
-                                            search(); // Trigger search on Enter key press
+                                            search(); // I fired the search function
                                         }
                                     }}
                                     className="rounded-md border-0 py-1 pl-7 pr-28 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-200 focus:ring-2 focus:ring-inset focus:ring-blue-200 sm:text-sm sm:leading-6"
