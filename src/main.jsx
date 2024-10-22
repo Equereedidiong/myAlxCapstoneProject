@@ -7,23 +7,23 @@ import App from './App.jsx';
 import './index.css';
 import PlayerContextProvider from './components/context/PlayerContext.jsx';
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
-import Home from './components/Home.jsx';  // Assuming you have a Home component
+import Home from './components/Home.jsx'; 
 import Dashboard from './components/Dashboard.jsx';
 import Login from './components/Login.jsx';
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: <Home />,  // Use `element` to render the component
+    element: <Home />,  
   },
   {
     path: "/dashboard",
-    element: <Dashboard />,  // Specify another path for Dashboard
+    element: <Dashboard />,  
   },
 
   {
     path: "/Login",
-    element: <Login />,  // Specify another path for Login Page
+    element: <Login />,  
   },
 
 ]);

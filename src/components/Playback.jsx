@@ -9,8 +9,8 @@ import { PlayerContext } from './context/PlayerContext';
 import { playsong } from './SongItem'
 import { songs2 } from '../assets/Assets';
 import React, { useContext, useState, useRef, useEffect } from 'react';
-import { songs } from '../assets/Assets'; // Assuming your song data is already here
-import { assets } from '../assets/Assets'; // For your icons
+import { songs } from '../assets/Assets'; 
+import { assets } from '../assets/Assets'; 
 
 export const Playback = () => {
 
@@ -40,12 +40,12 @@ export const Playback = () => {
       setCurrentSongIndex((prevIndex) => (prevIndex - 1 + songs.length) % songs.length); // Loop back if at the start
     };
   
-    // When the current song changes, load and play the new song
+    // When the current song changes, this hook will now load and play the new song
     useEffect(() => {
-      audioRef.current.pause(); // Pause the old song
-      audioRef.current = new Audio(songs[currentSongIndex].file); // Set the new song
+      audioRef.current.pause(); // to Pause song
+      audioRef.current = new Audio(songs[currentSongIndex].file); // to Set the new song
       if (isPlaying) {
-        play(); // Play the new song if the previous one was playing
+        play(); // to Play the new song 
       }
     }, [currentSongIndex]);
 

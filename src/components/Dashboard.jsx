@@ -16,7 +16,7 @@ const Dashboard = () => {
 
 
   const {audioRef,track} = useContext(PlayerContext)
-
+  
 
   return (
     
@@ -28,7 +28,8 @@ const Dashboard = () => {
       </div>
 
       <Playback />
-      <audio ref = {audioRef} src={songs2[0]} preload ='auto'></audio>
+      <audio ref = {audioRef} src={songs2[0]} preload ='auto'></audio> 
+      {/* This did not work */}
     </div>
   )
 }

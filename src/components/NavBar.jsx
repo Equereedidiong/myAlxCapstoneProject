@@ -1,5 +1,5 @@
 //This file is where my search input functionality lives. 
-//It welcomes the user when logged in and also helps them search for inputs
+//It welcomes the user when logged in and also helps them search for albums,songs,tracks etc.
 
 import React, { useState, useEffect } from 'react';
 import SideNav from './SideNav';
@@ -38,7 +38,7 @@ function NavBar() {
             .catch(error => console.error('Error fetching token:', error)); // Catch any errors
     }, []); // Only run once on component mount
 
-    // Function to search for albums and artists
+    // The Function to search for albums and artists
     async function search() {
         console.log('You just searched for: ' + searchInput);
 
@@ -48,7 +48,7 @@ function NavBar() {
         }
 
         if (searchInput === "" )  { 
-            // Code to reset search input when cleared.
+            //The  Code to reset search input when cleared.
             setAlbum(defaultAlbums);
             return;
         }
@@ -61,7 +61,7 @@ function NavBar() {
             }
         };
 
-        // Code to Get artist ID
+        // The Code to Get artist ID
         const artistID = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=artist`, searchParameters)
             .then(results => results.json()) 
             .then(data => (data.artists.items.length ? data.artists.items[0].id : null))
@@ -69,7 +69,7 @@ function NavBar() {
 
         console.log('Artist ID:', artistID);
 
-        // Code to Get album data based on the search input
+        // The Code to Get album data based on the search input
         const albumData = await fetch(`https://api.spotify.com/v1/search?q=${searchInput}&type=album&market=US&limit=24`, searchParameters)
             .then(results => results.json())
             .then(data => {
